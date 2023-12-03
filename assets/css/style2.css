@@ -174,8 +174,12 @@ html {
 }
 
 .button__portfolio:hover{
+    position: absolute;
+    top: 90%;
+    left: 90%;
+    transform: translate(-75%,-80%);
     background-color: #003fbc;
-    transform: scale(1.1);
+    /* transform: scale(1.1); */
 }
 /* ------------------------- */
 /* About me and forms */
