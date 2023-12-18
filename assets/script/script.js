@@ -12,17 +12,25 @@ function applyGlassmorphism() {
     }
 }
 
+// Función para cambiar la apariencia al abrir o cerrar el menú
+function toggleMenuAppearance() {
+    navbar.classList.toggle("glassmorphism-menu-open", navLinks.classList.contains('active'));
+}
+
 // Evento de clic en el botón de menú
 menuToggle.addEventListener('click', () => {
     navLinks.classList.toggle('active');
+    toggleMenuAppearance();
 });
 
 // Evento de desplazamiento
 window.addEventListener("scroll", applyGlassmorphism);
 
 // Evento de carga de la página
-document.addEventListener('DOMContentLoaded', applyGlassmorphism);
-
+document.addEventListener('DOMContentLoaded', () => {
+    applyGlassmorphism();
+    toggleMenuAppearance(); // Asegura que la apariencia inicial sea correcta
+});
 
 // footer
 function restartAnimation() {

@@ -133,6 +133,13 @@
     /* padding: 15px; */
 }
 
+.glassmorphism-menu-open {
+    /* Estilos cuando el menú está abierto */
+    background-color: #0056FF; /* Color azul de fondo, ajusta según sea necesario */
+    backdrop-filter: none; /* Elimina el efecto glassmorphism cuando el menú está abierto */
+    /* Otros estilos que desees cambiar cuando el menú está abierto */
+}
+
 /* ------------------ */
 /* Footer */
 footer{
@@ -258,7 +265,8 @@ footer a {
     }
 
     .menu-toggle:hover .effect__bars {
-        background-color: #FC00F2;
+        /* background-color: #FC00F2; */
+        background-color: #e5e5e5;
         transform: scale(1.2);
     }
 
@@ -284,6 +292,7 @@ footer a {
         padding: 20px 0px 20px 0px;
         z-index: 1;
         gap: 15px;
+        border-radius: 0px 0px 30px 30px;
     }
 
     .nav-links.active {
