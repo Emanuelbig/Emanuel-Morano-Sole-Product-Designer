@@ -1,20 +1,28 @@
 // Navbar
 const menuToggle = document.querySelector('.menu-toggle');
 const navLinks = document.querySelector('.nav-links');
+const navbar = document.querySelector(".navbar");
 
+// Función para aplicar el efecto glassmorphism
+function applyGlassmorphism() {
+    if (window.scrollY > 0) {
+        navbar.classList.add("glassmorphism");
+    } else {
+        navbar.classList.remove("glassmorphism");
+    }
+}
+
+// Evento de clic en el botón de menú
 menuToggle.addEventListener('click', () => {
     navLinks.classList.toggle('active');
-})
-
-// Glassmorphism de la navbar
-window.addEventListener("scroll", function() {
-    const navbar = document.querySelector(".navbar");
-    if (window.scrollY > 0) {
-    navbar.classList.add("glassmorphism");
-    } else {
-    navbar.classList.remove("glassmorphism");
-    }
 });
+
+// Evento de desplazamiento
+window.addEventListener("scroll", applyGlassmorphism);
+
+// Evento de carga de la página
+document.addEventListener('DOMContentLoaded', applyGlassmorphism);
+
 
 // footer
 function restartAnimation() {
