@@ -29,8 +29,10 @@
     <link rel="stylesheet" href="./assets/css/style1.css">
     <link rel="stylesheet" href="./assets/css/style2.css">
     <link rel="stylesheet" href="./assets/css/reset.css">
-    <link rel="stylesheet" href="./assets/css/pruebapalabras.css">    
-
+    <link rel="stylesheet" href="./assets/css/pruebapalabras.css">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- remember use this https://animejs.com/ -->
     <!-- Font Lalezar -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -63,7 +65,7 @@
     </nav>
     <!-- Main -->
     <main class="presentation">
-        <div class="open">
+        <div class="open" data-aos="fade-left" data-aos-duration="700">
             <div class="important__text1b">
                 <div class="main__title">
                     <p class="presentation_text1">Diseño experiencias 
@@ -71,15 +73,18 @@
                 </div>
             </div>
         </div>
-        <div class="me">
+        <div class="me" data-aos="fade-zoom-in"
+        data-aos-easing="ease-in-back"
+        data-aos-delay="700"
+        data-aos-offset="0">
             <img src="./assets/images/meversion1a.webp" class="me2" alt="Emanuel Morano Solé - Diseñador">
         </div>
         <div class="important__text">
-            <div class="main__title">
+            <div class="main__title" data-aos="fade-right" data-aos-duration="700">
                 <p class="presentation_text1 close__responsive">Diseño experiencias 
                     y productos emocionantes</p>
             </div>
-            <div class="main__text">
+            <div class="main__text" data-aos="fade-right" data-aos-duration="700">
                 <p class="presentation_text2">Hola! Soy Ema, un <span class="highlighted">Diseñador</span> que combina la creatividad con la tecnología.
                     Me centro en crear soluciones que evoquen <span class="highlighted">conexiones emocionales</span>, <span class="highlighted">impactos económicos positivos</span> y <span class="highlighted">satisfacciónes en el usuario</span>.</p>
             </div> 
@@ -87,11 +92,10 @@
     </main>
     <!-- Proyectos -->
     <section class="projects">
-        <div class="container__title__sections">
+        <div class="container__title__sections" data-aos="fade-right" data-aos-duration="700">
             <div class="circle__titles"></div>
             <h2 class="projects__title">PROYECTOS</h2>
-        </div>
-        
+        </div>        
         <div class="container__projects">
             <!-- <div class="projects_frame">
                 <div class="filter_image">
@@ -103,22 +107,22 @@
                     </svg></a>
                 </div>
             </div> -->
-            <div class="projects_frame">
+            <div class="projects_frame" data-aos="fade-right" data-aos-duration="700">
                 <div class="filter_image">
                     <img src="./assets/images/Portada-uxui-design.png" alt="Diseño UX UI trabajos - Emanuel Morano Solé" class="image__frame">
                 </div>
                 <p class="title__frame">Diseño UX/UI</p>
-                <div class="button__portfolio"><a href=""><svg width="39" height="27" viewBox="0 0 52 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <div class="button__portfolio"><a href="./assets/pages/uxuidesign.html"><svg width="39" height="27" viewBox="0 0 52 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M52 17.9996C51.9843 17.3854 51.7993 17.0152 51.5625 16.7496L38.5625 0.749519C37.9484 -0.116231 36.5569 -0.253235 35.6869 0.449775C34.8169 1.15279 34.7707 2.46726 35.4687 3.24952L45.8125 15.9996H2C0.8954 15.9996 0 16.895 0 17.9996C0 19.1042 0.8954 19.9996 2 19.9996H45.8125L35.4687 32.7496C34.677 33.5396 34.902 34.9255 35.7377 35.6689C36.3811 36.2411 38.0957 36.0588 38.5625 35.2496L51.5625 19.2496C51.901 18.8352 52.0041 18.527 52 17.9996Z" fill="white"/>
                     </svg></a>
                 </div>
             </div>
-            <div class="projects_frame">
+            <div class="projects_frame" data-aos="fade-right" data-aos-duration="700">
                 <div class="filter_image">
                     <img src="./assets/images/Portada-industrial-design.png" alt="Diseño Industrial trabajos - Emanuel Morano Solé" class="image__frame">
                 </div>
                 <p class="title__frame">Diseño Industrial</p>
-                <div class="button__portfolio"><a href=""><svg width="39" height="27" viewBox="0 0 52 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <div class="button__portfolio"><a href="./assets/pages/industrialdesign.html"><svg width="39" height="27" viewBox="0 0 52 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M52 17.9996C51.9843 17.3854 51.7993 17.0152 51.5625 16.7496L38.5625 0.749519C37.9484 -0.116231 36.5569 -0.253235 35.6869 0.449775C34.8169 1.15279 34.7707 2.46726 35.4687 3.24952L45.8125 15.9996H2C0.8954 15.9996 0 16.895 0 17.9996C0 19.1042 0.8954 19.9996 2 19.9996H45.8125L35.4687 32.7496C34.677 33.5396 34.902 34.9255 35.7377 35.6689C36.3811 36.2411 38.0957 36.0588 38.5625 35.2496L51.5625 19.2496C51.901 18.8352 52.0041 18.527 52 17.9996Z" fill="white"/>
                     </svg></a>
                 </div>
@@ -143,24 +147,24 @@
     <!-- About me and Forms -->
     <section class="aboutme__forms">
         <article class="aboutme">
-            <div class="container__title__sections">
+            <div class="container__title__sections" data-aos="fade-right" data-aos-duration="700">
                 <div class="circle__titles"></div>
                 <h2 class="projects__title">SOBRE MÍ</h2>
             </div>
-            <div class="text__aboutme">
+            <div class="text__aboutme" data-aos="fade-right" data-aos-duration="700">
                 <p>Soy un Diseñador muy curioso nacido en la ciudad de Buenos Aires, Argentina. Desde chico me apasiona crear experiencias, situaciones y objetos por lo tanto tuve una formación técnica en mi adolescencia para luego seguir con mi formación en la Universidad de Buenos Aires como Diseñador Industrial, en el camino descubrí que el diseño puede estar presente practicamente en todo, como por ejemplo servicios y productos tangibles e intangibles. Esta concepción que tengo sobre el diseño ha hecho que esté involucrado en proyectos diferentes entre sí con distintas complejidades y escabilidades.</p>
                 <p>Me apasiona crear soluciones, materializar ideas y que los proyectos a mi cargo terminen desencadenando buenas experiencias y beneficios para todos, lo veo como mi granito de arena para mejorar la sociedad en la que vivimos.</p>
                 <p>Soy un Diseñador que tiene empatia y capacidad analítica para descubrir las necesidades e intereses y en base a eso crear soluciones viables y funcionales.</p>
             </div>
-            <div class="button__aboutme"><a href="./assets/pages/sobremi.html#mypath">Más info</a></div>
+            <div class="button__aboutme" data-aos="zoom-in" data-aos-duration="700"><a href="./assets/pages/sobremi.html#mypath">Más info</a></div>
         </article>
         <article class="forms">
-            <div class="container__title__sections">
+            <div class="container__title__sections" data-aos="fade-right" data-aos-duration="700">
                 <div class="circle__titles"></div>
                 <h2 class="projects__title">MIS FORMAS</h2>
             </div>
             <div class="container__cards">
-                <div class="card__forms">
+                <div class="card__forms" data-aos="zoom-out" data-aos-duration="700">
                     <svg class="icon__card" xmlns="http://www.w3.org/2000/svg" width="auto" height="70" viewBox="0 0 87 92" fill="none">
                         <mask id="path-1-outside-1_198_121" maskUnits="userSpaceOnUse" x="0" y="0" width="87" height="92" fill="black">
                         <rect fill="white" width="87" height="92"/>
@@ -171,10 +175,10 @@
                     </svg>
                     <p class="text__card">Consistencia</p>
                     <div class="card__overlay">
-                        <p>El usuario es el centro de todo diseño. Comprender a fondo sus necesidades, expectativas y capacidades es esencial para crear una experiencia que cumpla sus objetivos y resuelva sus problemas.</p>
+                        <p>La consistencia es una de las claves para crear un diseño eficaz. Cuando todos los elementos de un diseño se combinan de manera armoniosa, crean una experiencia más agradable y fácil de usar.</p>
                     </div>
                 </div>
-                <div class="card__forms">
+                <div class="card__forms" data-aos="zoom-out" data-aos-duration="700">
                     <svg class="icon__card" xmlns="http://www.w3.org/2000/svg" width="auto" height="70" viewBox="0 0 87 92" fill="none">
                         <path d="M5.42857 64.7273H1.35714C0.607613 64.7273 0 64.1235 0 63.3788V37.7548C0 32.5428 4.25116 28.3182 9.49669 28.3182H28.5033C33.7491 28.3182 38 32.5413 38 37.7548V63.3788C38 64.1235 37.3924 64.7273 36.6429 64.7273H32.5714V87.6515C32.5714 88.3963 31.9638 89 31.2143 89H6.78571C6.03618 89 5.42857 88.3963 5.42857 87.6515V64.7273ZM20.3571 86.303H29.8571V63.3788C29.8571 62.634 30.4648 62.0303 31.2143 62.0303H35.2857V37.7548C35.2857 34.0309 32.2501 31.0152 28.5033 31.0152H9.49669C5.7503 31.0152 2.71429 34.0322 2.71429 37.7548V62.0303H6.78571C7.53524 62.0303 8.14286 62.634 8.14286 63.3788V86.303H17.6429V68.7727C17.6429 68.028 18.2505 67.4242 19 67.4242C19.7495 67.4242 20.3571 68.028 20.3571 68.7727V86.303ZM19 24.2727C12.2542 24.2727 6.78571 18.8391 6.78571 12.1364C6.78571 5.43363 12.2542 0 19 0C25.7458 0 31.2143 5.43363 31.2143 12.1364C31.2143 18.8391 25.7458 24.2727 19 24.2727ZM19 21.5758C24.2467 21.5758 28.5 17.3496 28.5 12.1364C28.5 6.92313 24.2467 2.69697 19 2.69697C13.7533 2.69697 9.5 6.92313 9.5 12.1364C9.5 17.3496 13.7533 21.5758 19 21.5758Z" fill="#0056FF"/>
                     </svg>
@@ -183,7 +187,7 @@
                         <p>El usuario es el centro de todo diseño. Comprender a fondo sus necesidades, expectativas y capacidades es esencial para crear una experiencia que cumpla sus objetivos y resuelva sus problemas.</p>
                     </div>
                 </div>
-                <div class="card__forms">
+                <div class="card__forms" data-aos="zoom-out">
                     <svg class="icon__card" xmlns="http://www.w3.org/2000/svg" width="auto" height="70" viewBox="0 0 87 92" fill="none">
                         <path d="M18.32 54.6119C9.29209 54.6119 1.9462 61.9961 1.9462 71.0577C1.9462 80.1193 9.29209 87.5034 18.32 87.5034C27.3847 87.5034 34.7325 80.1194 34.7325 71.0577C34.7325 61.9959 27.3847 54.6119 18.32 54.6119ZM18.32 56.8128C26.1907 56.8128 32.5327 63.1836 32.5327 71.0577C32.5327 78.9316 26.1907 85.3036 18.32 85.3036C10.4915 85.3036 4.14598 78.9318 4.14598 71.0577C4.14598 63.1835 10.4915 56.8128 18.32 56.8128Z" fill="#0056FF" stroke="#0056FF" stroke-width="0.2"/>
                         <path d="M70.9457 9.36438L70.9456 9.3643L70.9421 9.36741L61.1923 18.1485C60.7585 18.5371 60.7178 19.2777 61.1066 19.7116C61.4952 20.1454 62.2358 20.1861 62.6696 19.7975L62.67 19.7972L71.0925 12.1739C72.192 20.1659 71.0261 25.3675 68.5824 29.0111L68.6655 29.0668L68.5824 29.0111C65.9397 32.9519 61.6784 35.2325 56.6628 37.0352C54.5526 37.7936 52.3211 38.4623 50.0487 39.1433C49.621 39.2714 49.1919 39.4 48.7618 39.5298C46.0482 40.3482 43.2996 41.2107 40.6589 42.2867C35.3771 44.4389 30.4649 47.4804 27.2672 52.7965L27.2671 52.7966C26.9687 53.294 27.1479 54.0105 27.6452 54.3089L27.6452 54.3089C28.1425 54.6072 28.8589 54.4282 29.1574 53.9309C32.0336 49.1492 36.4301 46.3751 41.4844 44.3157C44.0117 43.2859 46.6887 42.448 49.3843 41.6341C49.7669 41.5186 50.15 41.4036 50.533 41.2885C52.8469 40.5935 55.1608 39.8985 57.3867 39.0984C62.5747 37.2337 67.3704 34.7722 70.4047 30.2475C73.0514 26.3008 74.2489 20.8869 73.4232 13.2918L80.8676 21.2225C81.045 21.4926 81.3457 21.6498 81.6548 21.6883C81.9668 21.7271 82.3003 21.6465 82.5391 21.4233C82.7778 21.2002 82.8807 20.8729 82.8629 20.5589C82.8453 20.2479 82.7085 19.9372 82.4508 19.742L72.8318 9.46718L72.8311 9.46648C72.4954 9.11475 72.2121 8.91792 71.9048 8.90723C71.5994 8.89661 71.3028 9.07152 70.9457 9.36438Z" fill="#0056FF" stroke="#0056FF" stroke-width="0.2"/>
@@ -192,7 +196,7 @@
                     </svg>
                     <p class="text__card">Trazar el plan</p>
                     <div class="card__overlay">
-                        <p>El usuario es el centro de todo diseño. Comprender a fondo sus necesidades, expectativas y capacidades es esencial para crear una experiencia que cumpla sus objetivos y resuelva sus problemas.</p>
+                        <p>Antes de empezar a diseñar, es importante trazar un plan. Esto nos ayudará a definir los objetivos del proyecto y el diseño, los usuarios a los que va dirigido y los recursos que tenemos disponibles.</p>
                     </div>
                 </div>
 
@@ -238,5 +242,9 @@
     </footer>
     <!-- Scripts -->
     <script src="./assets/script/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
