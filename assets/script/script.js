@@ -1,3 +1,46 @@
+// Preloader
+// document.addEventListener("DOMContentLoaded", function() {
+//     var pantallaCarga = document.getElementById("pantalla-carga");
+//     var contenido = document.getElementById("contenido");
+//     var isPreloaderShown = localStorage.getItem("isPreloaderShown");
+
+//     if (!isPreloaderShown) {
+//         window.addEventListener("load", function () {
+//         // Ocultar la pantalla de carga después de 4 segundos + duración de la animación de expandir
+//         setTimeout(function () {
+//             pantallaCarga.style.display = "none";
+//             contenido.style.visibility = "visible";
+//         }, 7000); // 4 segundos (4000 ms) + duración de la animación de expandir (3000 ms)
+//     });
+//         localStorage.setItem("isPreloaderShown", true);
+//     } else {
+//         pantallaCarga.style.display = "none";
+//         contenido.style.visibility = "visible";
+//     }
+// });
+
+// Preloader
+document.addEventListener("DOMContentLoaded", function() {
+    var pantallaCarga = document.getElementById("pantalla-carga");
+    var contenido = document.getElementById("contenido");
+    var isPreloaderShown = localStorage.getItem("isPreloaderShown");
+
+    if (!isPreloaderShown) {
+        window.addEventListener("load", function () {
+            // Ocultar la pantalla de carga después de 4 segundos + duración de la animación de expandir
+            setTimeout(function () {
+                pantallaCarga.style.display = "none";
+                contenido.style.visibility = "visible";
+            }, 7000); // 4 segundos (4000 ms) + duración de la animación de expandir (3000 ms)
+        });
+        localStorage.setItem("isPreloaderShown", true);
+    } else {
+        pantallaCarga.style.display = "none";
+        contenido.style.visibility = "visible";
+    }
+});
+
+
 // Navbar
 const menuToggle = document.querySelector('.menu-toggle');
 const navLinks = document.querySelector('.nav-links');

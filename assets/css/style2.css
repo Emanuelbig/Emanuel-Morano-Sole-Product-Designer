@@ -763,6 +763,7 @@ textarea{
     .title__frame {
         top: 50%;
         left: 50%;
+        font-size: 26px;
     }
     /* ////////////// */
     /* Aboutme */
