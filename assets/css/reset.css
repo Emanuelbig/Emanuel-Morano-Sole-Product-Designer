@@ -1,6 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
+/* This reset is from Argentina, Buenos Aires city, done by Emanuel Morano Solé
 */
 
 html, body, div, span, applet, object, iframe,
@@ -45,4 +43,49 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../fonts/SFProDisplay-Black.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../fonts/SFProDisplay-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../fonts/SFProDisplay-Heavy.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../fonts/SFProDisplay-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../fonts/SFProDisplay-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../fonts/SFProDisplay-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'San Francisco Pro';
+    src: url('../fonts/SFProDisplay-Semibold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'San Francisco Pro';
+    src: url('../fonts/SFProDisplay-Thin.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'San Francisco Pro';
+    src: url('../fonts/SFProDisplay-Ultralight.ttf') format('truetype');
 }
