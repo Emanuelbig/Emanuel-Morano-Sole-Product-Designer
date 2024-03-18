@@ -636,7 +636,7 @@ textarea{
 
 .content__aboutit {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: column nowrap;
     gap: 50px;
     text-align: start;
     align-items: center;
@@ -658,9 +658,10 @@ textarea{
     margin-left: 190px; */
     /* gap: 40px; */
     /* margin-bottom: 40px ; */
+    max-width: 600px;
 }
 .position_this_text{
-    order: 1;
+    order: 2;
 }
 .position_this_content{
     order: 2;
