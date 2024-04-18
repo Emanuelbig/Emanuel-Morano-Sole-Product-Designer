@@ -577,6 +577,18 @@ textarea{
 
     border-radius: 30px;
     background: #D9D9D9;
+
+    overflow: hidden; /* Añadido para recortar imágenes que se desborden */
+    position: relative; 
+}
+
+.main__image__aboutme img {
+    width: 100%; /* La imagen ocupará todo el espacio del contenedor */
+    height: 100%; /* La imagen ocupará todo el espacio del contenedor */
+    object-fit: cover; /* La imagen se ajustará al tamaño del contenedor */
+    position: absolute; /* La imagen se posiciona absolutamente dentro del contenedor */
+    top: 0; /* La imagen estará en la parte superior del contenedor */
+    left: 0; /* La imagen estará en la parte izquierda del contenedor */
 }
 /* ------------------------- */
 /* Carrousel */
@@ -605,6 +617,8 @@ textarea{
     margin: 0px 50px;
     margin-bottom: 100px;
     margin-top: 100px;
+    /*  agregado el position*/
+    position: relative;
 
     /* animacion */
     animation-name: carruselhere;
@@ -623,6 +637,17 @@ textarea{
     height: 500px;
     border-radius: 20px;
     background: #D9D9D9;
+    /* agregado el overflow */
+    overflow: hidden;
+}
+
+.carrusel__image {
+    width: 100%; /* La imagen ocupará todo el espacio del contenedor */
+    height: 100%; /* La imagen ocupará todo el espacio del contenedor */
+    object-fit: cover; /* La imagen se ajustará al tamaño del contenedor */
+    position: absolute; /* La imagen se posiciona absolutamente dentro del contenedor */
+    top: 0; /* La imagen estará en la parte superior del contenedor */
+    left: 0; /* La imagen estará en la parte izquierda del contenedor */
 }
 /* ------------------------ */
 /* My forms2 */
