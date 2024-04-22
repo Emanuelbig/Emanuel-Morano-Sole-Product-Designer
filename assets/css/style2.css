@@ -327,6 +327,10 @@ html {
 /* ------------------------- */
 /* Contact */
 .contacto{
+    max-width:100%;
+    margin: 0 auto; /* Centra el contenedor en la página */
+    overflow-x: hidden; /* Evita el desbordamiento horizontal */
+    /*  */
     box-sizing: border-box;
     background: linear-gradient(125deg, #FFF 0%, #F3F7FF 42.55%, #EAF1FF 64.42%, #D6E3FF 86.09%, #B8D0FF 100%);
 }
@@ -444,9 +448,12 @@ textarea{
     position: relative;
     width: 500px; */
     
+    max-width: 100%; /* Ocupa el ancho completo del contenedor padre */
+    margin-right: 0px; /* Ejemplo de margen derecho */
+    margin-left: 0px; /* Ejemplo de margen izquierdo */
 
-    max-width: 100%;
-    margin: 0px 0px 0px 0px;
+    /* max-width: 100%;
+    margin: 0px 0px 0px 0px; */
     padding: 20px;
     box-sizing: border-box;
     
